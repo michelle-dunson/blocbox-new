@@ -303,3 +303,7 @@ header .hero {
    font-size:13px;
    margin-top: 30px;
  }
+.testimonials li.even {
+	position: relative;
+	top: 20px;
+}
