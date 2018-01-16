@@ -41,12 +41,28 @@ html, body{
    min-height: 1px;
    margin:0 2% 20px;
  }
+/* MEDIA QUERIES */
+@media (max-width: 991px) {
+   .testimonials li.even {
+	 position: static !important;
+   }
+	.pricing .box {
+		width: 400px;
+		margin: 0 auto !important;
+	}
+	.pricing .middle {
+		width: 450px !important;
+	}
+}
 @media (min-width: 768px) {
    .container {
      width: 750px;
    }
-	.hero img {
+   .hero img {
 		width: 600px !important;
+   }
+	header .hero h1 {
+		font-size: 42px !important;
 	}
  }
 @media (min-width: 991px) {
