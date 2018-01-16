@@ -9,7 +9,7 @@ html, body{
    font-family: "Varela Round", Helvetica, Arial, sans-serif;
  }
  h2 {
-   font-size:28px;
+   font-size:18px;
    font-weight: normal;
    margin-bottom: 5px;
  }
@@ -45,6 +45,9 @@ html, body{
    .container {
      width: 750px;
    }
+	.hero img {
+		width: 600px !important;
+	}
  }
  @media (min-width: 992px) {
    .container {
@@ -58,6 +61,18 @@ html, body{
    }
    .one-fourth {
      width:21%;
+   }
+   .hero img {
+		width: 750px !important; 
+   }
+   header .hero h1 {
+		font-size: 48px !important;
+	    margin:95px 0 0 !important;
+   }
+   header .hero p {
+		 font-size: 22px !important;
+		 line-height: 26px !important;
+		 margin:10px 0 40px !important;
    }
  }
  @media (min-width: 1200px) {
@@ -79,14 +94,16 @@ html, body{
    text-align: right;
    float:right;
    margin:0;
+	 position: relative;
+	 top: -60px;
  }
  header nav ul > li {
    list-style-type: none;
    display: inline-block;
-   margin:0 15px;
+   margin:0 10px;
  }
  header nav ul > li.btn-outline {
-   padding:10px 15px;
+   padding:5px 10px;
    border:2px solid #FFFFFF;
    border-radius: 4px;
  }
@@ -94,8 +111,9 @@ html, body{
    background:#FFFFFF;
  }
  header nav ul > li > a {
-   color:#FFFFFF;
-   text-decoration: none;
+ 	color:#FFFFFF;
+ 	text-decoration: none;
+	font-size: 12px;
  }
  header nav ul > li.btn-outline:hover > a {
    color:#34495E;
@@ -106,19 +124,20 @@ header .hero {
    position: relative;
  }
  header .hero h1 {
-   font-size:48px;
+   font-size:36px;
    font-weight: normal;
-   margin:95px 0 0;
+   margin:15px 0 0;
  }
  header .hero p {
-   font-size: 22px;
-   line-height: 26px;
+   font-size: 18px;
+   line-height: 24px;
    font-weight: 100;
-   margin:10px 0 40px;
+   margin:10px 0 30px;
  }
  header .hero img {
-   display: block;
-   margin:3em auto 0;
+ 	display: block;
+ 	margin:3em auto 0;
+	width: 500px;
  }
 /* BUTTONS */
  .btn {
