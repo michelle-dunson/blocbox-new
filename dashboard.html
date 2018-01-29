@@ -21,7 +21,7 @@
    	 <a class="hamburger" id="menu" href="#">&#9776;</a>
    		<!-- LEFT NAV -->
    		<nav id="left-nav" class="left-nav one-fourth">
-     		<a href="#" class="site-logo"><img src="images/site-logo.png" /></a>
+     		<a href="#" class="site-logo"><img src="images/site-logo.png" alt="logo"/></a>
      		<div class="items">
        			<p>Items</p>
        			<ul>
@@ -38,9 +38,18 @@
        			</ul>
      		</div>
 			<div class="settings">
-     			<img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
+     			<img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="profile">
      			<p>Joey Kirk</p>
-     			<a href="#"><i class="fa fa-cog"></i></a>
+				<ul class="settings-menu">
+            		<li>
+     					<a href="#" class="no-margin"><i class="fa fa-cog"></i></a>
+						<ul id="settings">
+							<li><a href="#"><i class="fa fa-cog"></i> Account Settings</a></li>
+							<li><a href="#"><i class="fas fa-users"></i> Collaborators</a></li>
+							<li><a href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+						</ul>
+					</li>
+				</ul>
    			</div>
    		</nav>
 		<main role="main">
@@ -126,11 +135,19 @@
    		<script src="js/dropit.js"></script>
    		<script type="text/javascript">
 			$(document).ready(function() {
-     			$("#add").dropit( {
+     			$(".menu").dropit( {
 					action:'click',
 					submenuEl:'ul',
 					triggerEl:'a',
-					triggerParentEl:'li',
+					triggerParentEl:'li'
+				});
+			});
+			$(document).ready(function() {
+     			$(".settings-menu").dropit( {
+					action:'click',
+					submenuEl:'ul',
+					triggerEl:'a',
+					triggerParentEl:'li'
 				});
 			});
 			$( "#menu" ).click(function() {

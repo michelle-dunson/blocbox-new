@@ -202,7 +202,7 @@ html, body{
    }
    .left-nav {
      height: 100vh !important;
-     width:14.66666667% !important;
+     width:280px !important;
      color:#FFFFFF !important;
      background: #34495E !important;
      background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%) !important;
@@ -517,6 +517,7 @@ header .hero {
    height: 100%;
    width: 280px;
    position:absolute;
+   z-index: 1;
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
@@ -531,15 +532,20 @@ header .hero {
    width:280px;
    background: #34495E;
    background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+   color: #ffffff;
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
    transition: all 0.3s ease-in-out;
    transform: translate(0,0);
-     -webkit-transform: translate(0,0); /** Chrome & Safari **/
-     -o-transform: translate(0,0); /** Opera **/
-     -moz-transform: translate(0,0); /** Firefox **/
-     z-index: 100;
+   -webkit-transform: translate(0,0); /** Chrome & Safari **/
+   -o-transform: translate(0,0); /** Opera **/
+   -moz-transform: translate(0,0); /** Firefox **/
+   z-index: 100;
+  }
+  .left-nav.open > img {
+	position: relative !important;
+	left: 100px !important;
   }
  .hamburger {
    position:absolute;
@@ -614,11 +620,16 @@ header .hero {
  .left-nav .settings a {
    color:#FFFFFF;
    text-decoration: none;
-   text-align: right;
-   float: right;
+   text-align: left;
+   float: left;
    margin-right:10px;
    margin-top:8px;
  }
+.no-margin {
+	position: relative;
+	margin-top: 0 !important;
+	bottom: 6px !important;
+}
 /* CONTENT */
  .content {
    padding:6em 1% 1.5em;
