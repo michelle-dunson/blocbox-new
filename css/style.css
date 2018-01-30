@@ -34,6 +34,13 @@ html, body{
  .container:after {
    clear: both;
  }
+.quotes:before, .quotes:after {
+	content: " ";
+	display: table;
+}
+ .quotes:after {
+	clear: both;
+}
  .one-half, .one-third, .one-fourth {
    width:96%;
    float:left;
@@ -223,6 +230,10 @@ html, body{
    }
    .hamburger {
      display:none !important;
+   }
+   .quotes {
+	 width: 1040px;
+	 margin: auto;
    }
 }
  @media (min-width: 1200px) {
